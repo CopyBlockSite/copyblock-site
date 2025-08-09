@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CopyBlock News</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>CopyBlock News</h1>
+</header>
+
+<div class="container">
+  <main>
+    <section id="news"></section>
+
+    <section id="login-section">
+      <h2>Publisher Login</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <p id="login-status"></p>
+    </section>
+
+    <section id="publisher-tools" class="hidden">
+      <h2>Publisher Tools</h2>
+      <input type="text" id="title" placeholder="Article title">
+      <textarea id="content" placeholder="Article content"></textarea>
+      <button onclick="postArticle()">Post Article</button>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Recommended</h3>
+    <ul>
+      <li>Example Recommendation</li>
+    </ul>
+    <!-- AdSense -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="YOUR-ADSENSE-ID"
+         data-ad-slot="1234567890" data-ad-format="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </aside>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Paste your Firebase config here
+  const firebaseConfig = {
+    apiKey: "YOUR_KEY",
+    authDomain: "YOUR_PROJECT.firebaseapp.com",
+    projectId: "YOUR_PROJECT",
+    storageBucket: "YOUR_PROJECT.appspot.com",
+    messagingSenderId: "YOUR_ID",
+    appId: "YOUR_APP_ID"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
