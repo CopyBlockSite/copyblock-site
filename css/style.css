@@ -1,1 +1,19 @@
+:root { --muted:#666; --bg:#f4f6f8; --card:#fff;}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial; margin:0; background:var(--bg); color:#111}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#111;color:#fff}
+.brand{font-weight:700}
+.layout{display:flex;gap:18px;padding:20px;max-width:1100px;margin:18px auto}
+.main{flex:3;min-width:0}
+.sidebar{flex:1;min-width:260px}
+.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.05);margin-bottom:16px}
+.hidden{display:none}
+#news-list article{padding:12px;border-bottom:1px solid #eee}
+#news-list article h2{margin:0 0 8px}
+#news-list article p{margin:0;color:var(--muted)}
+.row{display:flex;gap:8px;margin-top:8px}
+input, textarea{width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:8px}
+textarea{min-height:120px;resize:vertical}
+.ad-card{display:flex;justify-content:center;align-items:center;min-height:120px}
+.muted{color:var(--muted)}
 
