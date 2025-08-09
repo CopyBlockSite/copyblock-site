@@ -20,14 +20,15 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js";
 
 // =============== CONFIG - replace with your Firebase values ===============
-const firebaseConfig = {
-  apiKey: "YOUR_APIKEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyCV15VUVmWxZ-_Cu00OzE3hG6bs1tU_uWo",
+    authDomain: "copyblock-site.firebaseapp.com",
+    projectId: "copyblock-site",
+    storageBucket: "copyblock-site.firebasestorage.app",
+    messagingSenderId: "424381600836",
+    appId: "1:424381600836:web:f6eb16504db355e3239811",
+    measurementId: "G-0F86BDW9Q1"
+  };
 
 const PUBLISHER_EMAIL = "you@yourdomain.com"; // replace with your email exactly
 
@@ -146,4 +147,3 @@ async function loadRecommended() {
 // initial load
 loadArticles();
 loadRecommended();
-
